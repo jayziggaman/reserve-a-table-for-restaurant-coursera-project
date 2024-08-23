@@ -19,9 +19,9 @@ const Review = ({ review }) => {
   return (
     <div className="review">
       <div className="review-stars">
-        {arr.map(star => {
+        {arr.map((star, ind) => {
           return (
-            <span>
+            <span key={ind}>
               <StarOutlinedIcon
                 style={{
                   color: '#F4CE14'

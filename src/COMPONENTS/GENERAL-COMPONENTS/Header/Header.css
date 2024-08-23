@@ -62,7 +62,7 @@ div.header-menu ul li a {
 div.header-menu ul li.order-online a {
   background-color: var(--green);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 3rem;
 }
 
