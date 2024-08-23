@@ -1,0 +1,56 @@
+div.review {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.25rem;
+  width: 15rem;
+}
+
+
+div.review-stars {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+
+div.review-stars svg,
+div.review-stars svg path {
+  color: var(--yellow);
+}
+
+
+div.review-name-img-location {
+  display: flex;
+  gap: 1rem;
+}
+
+
+div.review-name-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+p.review-name {
+  font-weight: 600;
+}
+
+
+div.review-img-div img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+}
+
+
+p.review-comment {
+  font-size: 0.9rem;
+  padding-left: 2rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5rem;
+}

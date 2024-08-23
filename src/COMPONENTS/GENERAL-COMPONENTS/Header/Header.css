@@ -1,0 +1,95 @@
+header.site-header {
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+
+div.header-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  max-width: 1200px;
+}
+
+
+div.header-logo-div {
+  height: 3rem;
+}
+
+
+div.header-logo-div img {
+  height: 100%;
+}
+
+
+div.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+div.header-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+div.header-menu ul li {
+  list-style: none;
+}
+
+
+div.header-menu ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+div.header-menu ul li.order-online a {
+  background-color: var(--green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+}
+
+
+div.header-menu a.cart-link,
+div.header-menu a.cart-link svg,
+div.header-menu a.cart-link svg path {
+  color: black;
+}
+
+
+
+button.toggle-menu {
+  background-color: transparent;
+  border: none;
+}
+
+
+
+
+@media (min-width:800px) {
+  div.header-menu {
+    gap: 3rem;
+  }
+
+
+  div.header-menu ul {
+    gap: 2rem;
+  }
+}

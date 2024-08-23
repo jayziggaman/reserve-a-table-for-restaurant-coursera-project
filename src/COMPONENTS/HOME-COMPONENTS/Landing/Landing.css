@@ -1,0 +1,151 @@
+section.landing-section {
+  min-height: calc(100vh - 5rem);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+}
+
+
+section.landing-section section.section-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* height: 100%; */
+  min-height: calc(100vh - 5rem);
+  position: relative;
+}
+
+
+
+div.landing-text-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 1rem;
+}
+
+
+div.landing-text-div h1 {
+  color: var(--yellow);
+  font-size: 4rem;
+}
+
+
+div.landing-text-div h1 span {
+  display: block;
+}
+
+
+div.landing-text-div h1 span.location {
+  color: white;
+  font-size: 3rem;
+}
+
+
+div.landing-text-div p {
+  max-width: 25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+  margin-top: 2rem;
+}
+
+
+div.landing-text-div a {
+  padding: 1rem 2rem;
+  background-color: var(--yellow);
+  width: max-content;
+  border-radius: 3rem;
+  margin-top: 2rem;
+}
+
+
+
+div.landing-img-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+
+div.landing-img-div img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+@media (min-width: 680px) {
+  section.landing-section {
+    min-height: unset;
+  }
+
+  section.landing-section section.section-content {
+    grid-template-columns: 1fr 1fr;
+    min-height: unset;
+  }
+
+
+
+  div.landing-text-div {
+    position: static;
+    background-color: transparent;
+    padding: unset;
+  }
+
+
+  div.landing-text-div h1 {
+    font-size: 3rem;
+  }
+
+
+  div.landing-text-div h1 span.location {
+    font-size: 2rem;
+  }
+
+
+  div.landing-text-div p {
+    max-width: 20rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+  }
+
+
+  div.landing-text-div a {
+    margin-top: 1rem;
+  }
+
+
+
+  div.landing-img-div {
+    position: relative;
+    height: 60vh;
+    z-index: unset;
+  }
+
+
+  div.landing-img-div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.5rem;
+    height: 75vh;
+    width: 100%;
+  }
+
+}

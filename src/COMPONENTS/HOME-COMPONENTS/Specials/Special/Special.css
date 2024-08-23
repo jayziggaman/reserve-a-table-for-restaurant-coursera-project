@@ -1,0 +1,52 @@
+article.special {
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.25rem;
+  display: grid;
+  grid-template-rows: 15rem 1fr;
+}
+
+
+div.special-img-div {
+  height: 15rem;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+
+div.special-img-div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+
+div.special-text-div {
+  padding: 2rem 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+div.special-name-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+div.special-name-price h3 {
+  font-size: 1.2rem;
+}
+
+
+div.special-name-price span {
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+
+div.special-text-div p {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,49 @@
+nav {
+  position: fixed;
+  top: 5rem;
+  width: 100%;
+  left: 0;
+  background-color: var(--green);
+  z-index: 5;
+  transform: translateY(-200%);
+  transition: all 500ms ease-in-out;
+  padding: 2rem;
+}
+
+
+nav.nav {
+  transform: translateY(0);
+}
+
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+nav ul li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1rem;
+  width: max-content;
+}
+
+
+nav ul li.order-online {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--yellow);
+  border-radius: 3rem;
+}
+
+
+nav ul li a {
+  color: white;
+}
+
+
+nav ul li.order-online a {
+  color: black;
+}
