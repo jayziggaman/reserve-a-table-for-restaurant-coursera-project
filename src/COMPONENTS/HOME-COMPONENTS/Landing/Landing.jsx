@@ -17,7 +17,7 @@ const Landing = () => {
             We are a family owned Mediterranean restaurant focused on traditional recipes served with a modern twist.
           </p>
 
-          <Link to='reservations'>
+          <Link to='/book-table'>
             Reserve a Table
           </Link>
         </div>

@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./COMPONENTS/GENERAL-COMPONENTS/Header/Header";
 import Nav from "./COMPONENTS/GENERAL-COMPONENTS/Nav/Nav";
 import Footer from "./COMPONENTS/GENERAL-COMPONENTS/Footer/Footer";
+import BookingPage from "./PAGES/BookingPage/ReserveTable";
 
 export const appContext = React.createContext()
 
@@ -44,7 +45,11 @@ function App() {
     
     <Nav />
 
-    <Home />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      
+      <Route path='/book-table' element={<BookingPage />} />
+    </Routes>
       
     <Footer />
 
