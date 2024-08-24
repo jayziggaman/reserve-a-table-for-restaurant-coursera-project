@@ -19,12 +19,13 @@ export const fetchAPI = function(date) {
   let random = seededRandom(date.getDate());
 
   for(let i = 17; i <= 23; i++) {
-      if(random() < 0.5) {
-          result.push(i + ':00');
-      }
-      if(random() < 0.5) {
-          result.push(i + ':30');
-      }
+    if(random() < 0.5) {
+      result.push(i + ':00');
+    }
+
+    if(random() < 0.5) {
+      result.push(i + ':30');
+    }
   }
   return result;
 };
@@ -44,8 +45,6 @@ const reducer = (availableTimes, action) => {
     case ACTIONS.CHANGE_TIME:
       return availableTimes = action.payload
     
-    // default
-    //   return availableTimes
   }
 }
 
@@ -55,21 +54,13 @@ const BookingPage = () => {
   
   const [availableTimes, dispatch] = useReducer(reducer, [])
 
-  const date = new Date()
-
-
-  useEffect(() => {
-    const available = fetchAPI(date)
-    dispatch({
-      type: ACTIONS.CHANGE_TIME, payload: available
-    })
-  }, [])
-
 
   function submitForm(formData) {
     const result = submitAPI(formData)
 
-    navigate( '/booking-confirmation', {replace: true})
+    if (result) {
+      navigate( '/booking-confirmation', {replace: true})
+    }
   }
 
 

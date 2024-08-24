@@ -2,5 +2,46 @@ form {
   display: grid;
   width: 90%;
   max-width: 30rem;
-  gap: 20px;
+  margin-bottom: 3rem;
+}
+
+
+form label {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+form input,
+form select {
+  height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 0.25rem;
+  border: 0.1rem solid black;
+}
+
+
+form input.error,
+form select.error {
+  border: 0.1rem solid red;
+}
+
+
+form button {
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: var(--green);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+}
+
+
+form p.error {
+  color: red;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin: 0.25rem 0 0 0.25rem;
 }
